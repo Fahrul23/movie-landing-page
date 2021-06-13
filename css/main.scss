@@ -138,18 +138,47 @@ header{
     width: 100%;
     // background-color: #71a7dd;
     .img-banner{
+        display: grid;
+        grid-template-columns: 1.2fr 2fr;
         width: 92%;
-        height: 444px;
+        height: 400px;
         margin-top: 80px;
         margin-left: 53px;
         margin-right: 50px;
         background-color: #030B17;
         border-radius: 10px;
-        img{
+        .title-banner{
+            box-sizing: border-box;
+            z-index: 999;
+            width: 100%;
+            height: 400px;
+            padding: 74px 51px;
+            box-shadow: 60px 0 1px 1px rgba(#030B17, 0.88);
+            h1{
+                color: #fff;
+                font-size: 1.7em;
+                font-weight: 600;
+            }
+            h4{
+                margin-top: 10px;
+                color: #C6C8CB;
+                font-weight: 500;
+            }
+            p{
+                margin-top: 10px;
+                color: #C6C8CB;
+            }
+        }
+        .img-movie{
             width: 100%;
             height: 100%;
-            object-fit: cover;
-            border-radius: 10px;
+
+            img{
+                border-radius: 10px;
+                width: 100%;
+                height: 90%;
+                object-fit: cover;
+            }
         }
     }
 }
@@ -171,11 +200,15 @@ header{
         margin-bottom: 100px;
         display: grid;
         gap: 10px;
-        grid-template-columns: repeat(auto-fit,minmax(130px,1fr));
+        grid-template-columns: repeat(auto-fit,minmax(140px,150px));
         .card-movies{
-            background-color: rgb(255, 252, 252);
-            border-radius: 5px;
-            height: 194px;
+            height: 200px;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 7px;
+            }
         }
     }
 }
